@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
+import Row from "../components/Row";
 import requests from "../utils/requests.js";
 
 export default function Home() {
@@ -49,13 +50,16 @@ export default function Home() {
       <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]">
         <Header />
 
-        <main>
+        <main className="pl-4 pb-24 lg:space-y-24 lg:pl-16">
           <Banner netflixOriginals={data.netflixOriginals}/>
           <section>
-            {/* row
-            row
-            row
-            row */}
+            <Row title="Trending Now" movies={data.trendingNow} />
+            <Row title="Top Rated" movies={data.topRated} />
+            <Row title="Action Thrillers" movies={data.actionMovies} />
+            <Row title="Comedies" movies={data.comedyMovies} />
+            <Row title="Horror Movies" movies={data.horrorMovies} />
+            <Row title="Romance Movies" movies={data.romanceMovies} />
+            <Row title="Documentaries" movies={data.documentaries} />
           </section>
         </main>
         {/* modal */}

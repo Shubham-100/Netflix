@@ -23,7 +23,7 @@ function Header() {
     }, [])
 
   return (
-    <header className={`${isScrolling && `bg-[#141414] transition-all ease-out duration-2000s`}`}>
+    <header className={`${isScrolling && `bg-[#141414] transition-all ease-out duration-2000s opacity-75`}`}>
         <div className="flex flex-row items-center space-x-2 md:space-x-10">
             <a href="#">
                 <img
@@ -43,7 +43,7 @@ function Header() {
         </div>
 
         <div className='flex items-center space-x-4 text-sm font-light'>
-            <SearchIcon className="hidden h-6 w-6 sm:inline"/>
+            <SearchIcon className="h-6 w-6 sm:inline"/>
             <p className="hidden lg:inline">Kids</p>
             <BellIcon className="h-6 w-6"/>
             <Link href="/account">

@@ -20,6 +20,10 @@
     .headerLink {
         @apply cursor-pointer text-sm font-light text-[white] transition duration-[.3s] hover:text-[#e1dddd]
     }
+
+   .btn {
+    @apply flex items-center gap-4 text-black text-sm font-semibold transition hover:opacity-75 px-5 py-1.5 rounded
+   }
 }
 
 ::-webkit-scrollbar {

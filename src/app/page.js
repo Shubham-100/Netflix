@@ -52,7 +52,7 @@ export default function Home() {
 
         <main className="pl-4 pb-24 lg:space-y-24 lg:pl-16">
           <Banner netflixOriginals={data.netflixOriginals}/>
-          <section>
+          <section className="space-y-2 md:space-y-4">
             <Row title="Trending Now" movies={data.trendingNow} />
             <Row title="Top Rated" movies={data.topRated} />
             <Row title="Action Thrillers" movies={data.actionMovies} />

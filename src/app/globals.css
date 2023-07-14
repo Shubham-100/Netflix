@@ -8,7 +8,7 @@
         @apply scroll-smooth
     }
     body {
-        @apply bg-[#141414] text-white overflow-x-hidden
+        @apply bg-[#141414] text-white
     }
 
     header {
@@ -27,7 +27,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
   
 /* Track */
@@ -37,7 +37,8 @@
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: red;
+    opacity: 0.1;
     border-radius: 5px;
 }
   

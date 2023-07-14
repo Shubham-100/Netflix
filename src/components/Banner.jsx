@@ -6,7 +6,7 @@ import requests from "../utils/requests";
 
 function Banner({netflixOriginals}) {
   const [movie, setMovie] = useState(null);
-  console.log(netflixOriginals?.results)
+  // console.log(netflixOriginals?.results)
   var idx = 10;
   
   useEffect(() => {

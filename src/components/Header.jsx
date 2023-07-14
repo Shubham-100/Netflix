@@ -23,7 +23,7 @@ function Header() {
     }, [])
 
   return (
-    <header className={`${isScrolling && `bg-[#141414] transition-all ease-out duration-2000s opacity-75`}`}>
+    <header className={`${isScrolling && ` bg-[#141414] transition-all ease-out duration-2000s opacity-100`}`}>
         <div className="flex flex-row items-center space-x-2 md:space-x-10">
             <a href="#">
                 <img

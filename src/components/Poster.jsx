@@ -1,10 +1,21 @@
 // import React, { useState } from 'react'
 import * as React from 'react';
 import BasicModal from './BasicModal';
+import Info from './Info';
 import YoutubeTrailer from './Youtube';
-
+import { FaPlay } from "react-icons/fa";
+import { VolumeUpIcon } from '@heroicons/react/solid'
+import {useState} from 'react';
+import {
+  CheckIcon,
+  PlusIcon,
+  ThumbUpIcon,
+  VolumeOffIcon,
+  XIcon,
+} from '@heroicons/react/outline'
 
 function Poster({movie}) {
+  const [muted, setMuted] = useState(true)
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     // console.log(movie)
@@ -22,6 +33,7 @@ function Poster({movie}) {
     
       <BasicModal open={open} onClose={handleClose}>
         <YoutubeTrailer id={movie.id} media={movie.media_type} />
+        <Info movie={movie}/>
       </BasicModal>
     </div>
   )

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { FaPlay } from "react-icons/fa";
 import { InformationCircleIcon } from '@heroicons/react/solid';
 import BasicModal from './BasicModal';
+import Info from './Info';
 import YoutubeTrailer from './Youtube';
 import requests from "../utils/requests";
 
@@ -44,7 +45,8 @@ function Banner({netflixOriginals}) {
       <div className="flex space-x-4 items-center gap-x-2">
         <button className="btn bg-white" onClick={handleOpen}><FaPlay className='h-4 w-4 md:h-7 md:w-7'/>Play</button>
         <BasicModal open={open} onClose={handleClose}>
-          <YoutubeTrailer id={movie.id} media={movie.media_type} />
+            {/* <YoutubeTrailer id={movie.id} media={movie.media_type} /> */}
+            <Info movie={movie} />
         </BasicModal>
         <button className="btn bg-[gray]/70 text-white"><InformationCircleIcon className='h-4 w-4 md:h-7 md:w-7'/>More Info</button>
       </div>

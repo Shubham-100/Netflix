@@ -9,7 +9,7 @@ function BasicModal({ open, onClose, children }) {
     transform: 'translate(-50%, -50%)',
     width: '60%',
     height: '50%',
-    bgcolor: 'background.paper',
+    bgcolor: '#181818',
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
@@ -28,7 +28,7 @@ function BasicModal({ open, onClose, children }) {
       }}
     >
       <Fade in={open}>
-        <Box sx={style} className='text-black'>
+        <Box sx={style} className='text-black space-y-20'>
           {children}
         </Box>
       </Fade>

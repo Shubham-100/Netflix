@@ -62,6 +62,7 @@ export default function Home() {
           </section>
         </main>
         {/* modal */}
+        {/* {showModal && <BasicModal />} */}
       </div>
   )
 }

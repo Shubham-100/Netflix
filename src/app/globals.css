@@ -8,7 +8,7 @@
         @apply scroll-smooth
     }
     body {
-        @apply bg-[#141414] text-white
+        @apply bg-[#141414] text-white overflow-x-hidden
     }
 
     header {

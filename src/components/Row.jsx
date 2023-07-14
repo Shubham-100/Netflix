@@ -1,21 +1,19 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import Poster from './Poster'
 
 function Row({title, movies}) {
-    const [shouldRender, setShouldRender] = useState(false);
+    console.log(movies)
+    const [data, setData] = useState(movies);
 
     useEffect(() => {
-      const timer = setTimeout(() => {
-        setShouldRender(true);
-      }, 2000);
-  
-      // Cleanup the timer when the component unmounts
-      return () => clearTimeout(timer);
-    }, []);
-  
-    if (!shouldRender) {
-      return null; // Return null to prevent rendering the component
+        // Update the data state whenever the prop changes
+        setData(movies);
+    }, [movies]);
+
+
+    if (typeof data === 'undefined') {
+        return null; // or any fallback component or loading indicator
     }
 
   return (

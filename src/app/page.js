@@ -40,14 +40,13 @@ export default function Home() {
                 romanceMovies,
                 documentaries});
 
-        //console.log(netflixOriginals.results[0].title)
     };
     fetchData();
   }, [])
 
 
   return (
-      <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]">
+      <div className="relative h-100vh bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]">
         <Header />
 
         <main className="pl-4 pb-24 lg:space-y-24 lg:pl-16">

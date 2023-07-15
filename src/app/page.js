@@ -39,6 +39,7 @@ export default function Home() {
                 horrorMovies,
                 romanceMovies,
                 documentaries});
+                
 
     };
     fetchData();

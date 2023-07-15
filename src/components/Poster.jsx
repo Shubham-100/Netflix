@@ -3,8 +3,6 @@ import * as React from 'react';
 import BasicModal from './BasicModal';
 import Info from './Info';
 import YoutubeTrailer from './Youtube';
-import { FaPlay } from "react-icons/fa";
-import { VolumeUpIcon } from '@heroicons/react/solid'
 import {useState} from 'react';
 import {
   CheckIcon,
@@ -18,7 +16,7 @@ function Poster({movie}) {
   const [muted, setMuted] = useState(true)
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
-    // console.log(movie)
+    console.log(movie)
     setOpen(true);
   }
   const handleClose = () => setOpen(false);

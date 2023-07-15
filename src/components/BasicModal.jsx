@@ -15,7 +15,6 @@ function BasicModal({ open, onClose, children }) {
     p: 4,
     overflowY:'auto',
     flexDirection: 'column',
-    margin: '5px',
   };
 
   return (

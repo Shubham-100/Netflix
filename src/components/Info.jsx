@@ -3,9 +3,9 @@ import React from 'react'
 function Info({movie}) {
   return (
     // <div className="flex text-white space-x-16 rounded-b-md bg-[#181818] px-10 py-8">
-          <div className="space-y-20 text-lg text-white">
+          <div className="pt-0 space-y-5 text-lg text-white">
               <div className="flex items-center space-x-2 text-sm">
-                <h1>{movie.original_title}</h1>
+                <h1 className='mt-0 font-bold'>{movie.original_title}</h1>
                 <p className="font-semibold text-green-400">
                   {Math.round(movie?.vote_average * 10)}% Match
                 </p>
@@ -17,9 +17,9 @@ function Info({movie}) {
                 </div>
               </div>
 
-            <div className="flex flex-col gap-x-10 gap-y-4 font-light md:flex-row">
+            <div className="flex flex-col gap-x-10 gap-y-4 font-light text-sm md:text-md md:flex-row">
               <p className="w-5/6">{movie?.overview}</p>
-              <div className="flex flex-col space-y-3 text-sm">
+              <div className="flex flex-col space-y-3 text-sm md:text-md">
                 <div>
                   <span className="text-[gray]">Original language: </span>
                   {movie?.original_language}

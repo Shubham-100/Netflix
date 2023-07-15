@@ -5,7 +5,7 @@ import YouTube from 'react-youtube';
 export default function YoutubeTrailer({id, media}) {
 
   const options = {
-    height: '100%',
+    
     width: '100%',
     playerVars: {
       autoplay: 0,
@@ -28,7 +28,7 @@ export default function YoutubeTrailer({id, media}) {
 
   return (
     <React.Fragment>
-      <YouTube videoId={link} opts={options} style={{position: 'absolute', left: 0, top: 0}}/>
+      <YouTube videoId={link} opts={options} style={{position: 'relative', top:0, left:0, width:'100%', height:'80%', flex: '1 0 auto'}}/>
     </React.Fragment>
   );
 }

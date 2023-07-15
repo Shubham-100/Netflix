@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react'
 import Search from './Search';
 
-
 function Header() {
     const [isScrolling, setIsScrolling] = useState(false);
 
@@ -20,7 +19,7 @@ function Header() {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         }
-    }, [])
+    }, []);
 
   return (
     <header className={`${isScrolling && ` bg-[#141414] transition-all ease-out duration-2000s opacity-100`}`}>
@@ -43,8 +42,7 @@ function Header() {
         </div>
 
         <div className='flex items-center space-x-4 text-sm font-light'>
-            {/* <SearchIcon className="h-6 w-6 sm:inline"/> */}
-            <Search/>
+            <Search />
         </div>
     </header>
   )

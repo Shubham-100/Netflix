@@ -29,7 +29,7 @@ function Poster({movie}) {
           onClick={handleOpen}
       />
     
-      <BasicModal open={open} onClose={handleClose}>
+      <BasicModal mb={5} className='flex' open={open} onClose={handleClose}>
         <YoutubeTrailer id={movie.id} media={movie.media_type} />
         <Info movie={movie}/>
       </BasicModal>

@@ -20,7 +20,7 @@ function Row({title, movies}) {
       };
 
   return (
-    <div className='-z-10 h-40 space-y-2 md:space-y-4'>
+    <div className='h-40 space-y-2 md:space-y-4'>
         <h2 className='w-56 cursor-pointer text-sm text-[#e5e5e5] hover:text-white transition duration-.2s md:text-2xl'>{title}</h2>
 
         <div className=' group relative md:-ml-2'>

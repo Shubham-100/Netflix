@@ -22,17 +22,17 @@ function Header() {
     }, []);
 
   return (
-    <header className={`${isScrolling && ` bg-[#141414] transition-all ease-out duration-2000s opacity-100`}`}>
+    <header className={`${isScrolling && ` bg-[#141414] transition-all ease-out duration-2000s opacity-100 z-100`}`}>
         <div className="flex flex-row items-center space-x-2 md:space-x-10">
             <a href="#">
                 <img
                     src="https://rb.gy/ulxxee"
-                    width={100}
-                    height={100}
-                    className="cursor-pointer object-contain"
+                    width={125}
+                    height={125}
+                    className="cursor-pointer object-contain md:ml-8"
                 />
             </a>
-            <ul className="hidden space-x-4 md:flex">
+            <ul className="hidden space-x-4">
                 <li className='headerLink'>Home</li>
                 <li className='headerLink'>TV Shows</li>
                 <li className='headerLink'>Movies</li>
@@ -41,9 +41,9 @@ function Header() {
             </ul>
         </div>
 
-        <div className='flex items-center space-x-4 text-sm font-light'>
+        {/* <div className='flex items-center space-x-4 text-sm font-light'>
             <Search />
-        </div>
+        </div> */}
     </header>
   )
 }

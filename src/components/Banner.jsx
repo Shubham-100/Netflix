@@ -36,7 +36,7 @@ function Banner({netflixOriginals}) {
             />
         </div>
 
-      <h1 className="text-white text-2xl font-bold md:text-4xl lg:text-7xl">
+      <h1 className="text-white text-2xl font-bold md:text-3xl lg:text-5xl">
         {movie?.title || movie?.name || movie?.original_name}
       </h1>
 
@@ -48,7 +48,7 @@ function Banner({netflixOriginals}) {
             <YoutubeTrailer id={movie.id} media={movie.media_type} />
             <Info movie={movie} />
         </BasicModal>
-        <button className="btn bg-[gray]/70 text-white" onClick={handleOpen}><InformationCircleIcon className='h-4 w-4 md:h-7 md:w-7'/>More Info</button>
+        {/* <button className="btn bg-[gray]/70 text-white" onClick={handleOpen}><InformationCircleIcon className='h-4 w-4 md:h-7 md:w-7'/>More Info</button> */}
       </div>
       
     </div>
